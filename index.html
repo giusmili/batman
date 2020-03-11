@@ -1,0 +1,40 @@
+  <!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fiche descriptive du film Batman Begins">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML Semantique</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body itemscope itemtype="https://schema.org/Movie">
+        <header>
+            <h1 itemprop="name"><img src="./assets/video-solid.svg" alt="camera logo">Batman begins</h1>
+        </header>
+        <main>
+            <article>
+                <img itemprop="image" src="https://s1.thcdn.com/productimg/1600/1600/11809562-1964606913694678.jpg" alt="affiche du film Batman Begins">
+                <h2>Caractéristiques</h2>
+                <ul>
+                    <li>Franchise: <span itemprop="productionCompany">DC Comics</span></li>
+                    <li>Acteurs: <span itemprop="actors">Christian Bale, Michael Caine, Liam Neeson, Katie Holmes, Gary Oldman, Cillian Murphy, Tom Wilkinson</span></li>
+                    <li>Réalisateur: <span itemprop="director">Christopher Nolan</span></li>
+                    <li>Langues des sous titres: <span itemprop="subtitleLanguage">fr, it, esp</span></li>
+                    <li>Date de sortie cinéma: <span itemprop="datePublished">10/09/2005</span></li>
+                    <li>
+                        <details open>
+                            <summary><strong>Description:</strong></summary>
+                            <p itemprop="description">Comment un homme seul peut-il changer le monde ? Telle est
+                                la question qui hante Bruce Wayne depuis cette nuit tragique où ses parents furent abattus sous
+                                ses yeux, dans une ruelle de Gotham City. Torturé par un profond sentiment de colère et de culpabilité,
+                                le jeune héritier de cette richissime famille fuit Gotham pour un long et discret voyage à travers le monde.
+                                Le but de ses pérégrinations : sublimer sa soif de vengeance en trouvant de nouveaux moyens de lutter contre l’injustice.
+                            </p>
+                        </details>
+                    </li>
+                </ul>
+            </article>
+        </main>
+    </body>
+</html>
